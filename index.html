@@ -8,7 +8,7 @@
   <style>
     body {
       background-color: #5a0000;
-      color: #ffe6ea;
+      color: #b64238;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -28,7 +28,7 @@
       border: none;
       padding: 10px 20px;
       border-radius: 8px;
-      color: #fff0f5;
+      color: #b64238;
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s;
@@ -45,6 +45,7 @@
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 15px;
+      color: #b64238;
     }
 
     .page.active {
@@ -52,7 +53,11 @@
     }
 
     h1, h2, h3 {
-      color: #ffb6c1;
+      color: #b64238;
+    }
+
+    p, li {
+      color: #b64238;
     }
 
     .features-grid {
@@ -69,13 +74,13 @@
       padding: 15px;
       width: 220px;
       text-align: center;
-      color: #ffe6f0;
+      color: #b64238;
     }
 
     .feature-item i {
       font-size: 40px;
       margin-bottom: 10px;
-      color: #ff4f7b;
+      color: #b64238;
     }
 
     .delta-content {
@@ -98,7 +103,7 @@
     .info-box {
       max-width: 500px;
       min-width: 250px;
-      color: white;
+      color: #b64238;
     }
 
     .info-box ul {
@@ -111,6 +116,7 @@
       margin: 5px 0;
       padding: 10px;
       border-radius: 8px;
+      color: white;
     }
 
     .download-btn {
@@ -157,7 +163,7 @@
       text-align: center;
       margin: 20px 0;
       font-weight: bold;
-      color: #ffb6c1;
+      color: #b64238;
     }
 
     img.fortnite-image {
@@ -271,7 +277,6 @@
     function showPage(pageId) {
       const pages = document.querySelectorAll('.page');
       pages.forEach((page) => page.classList.remove('active'));
-
       const activePage = document.getElementById(pageId);
       if (activePage) {
         activePage.classList.add('active');
