@@ -6,10 +6,18 @@
   <title>MAX</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <style>
+    :root {
+      --main-red: #5a0c0c;
+      --medium-red: #a62d2d;
+      --highlight-red: #d1403f;
+      --text-red: #d1403f;
+      --soft-red: #7a1f1f;
+    }
+
     body {
-      background-color: #5a0000;
-      color: #b64238;
-      font-family: Arial, sans-serif;
+      background-color: var(--main-red);
+      color: var(--text-red);
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
       direction: rtl;
@@ -18,34 +26,35 @@
     .nav-buttons {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       padding: 20px;
-      background-color: #770000;
+      background-color: var(--soft-red);
     }
 
     .nav-buttons button {
-      background-color: #cc3366;
+      background-color: var(--medium-red);
       border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      color: #b64238;
+      padding: 12px 24px;
+      border-radius: 10px;
+      color: var(--text-red);
       font-weight: bold;
       cursor: pointer;
+      font-size: 15px;
       transition: background-color 0.3s;
     }
 
     .nav-buttons button:hover {
-      background-color: #e6005c;
+      background-color: var(--highlight-red);
+      color: white;
     }
 
     .page {
       display: none;
       max-width: 1000px;
       margin: 20px auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      background-color: rgba(0, 0, 0, 0.2);
       border-radius: 15px;
-      color: #b64238;
     }
 
     .page.active {
@@ -53,11 +62,11 @@
     }
 
     h1, h2, h3 {
-      color: #b64238;
+      color: var(--text-red);
     }
 
     p, li {
-      color: #b64238;
+      color: var(--text-red);
     }
 
     .features-grid {
@@ -69,41 +78,25 @@
     }
 
     .feature-item {
-      background-color: #801336;
+      background-color: var(--soft-red);
       border-radius: 10px;
       padding: 15px;
       width: 220px;
       text-align: center;
-      color: #b64238;
+      color: var(--text-red);
     }
 
     .feature-item i {
       font-size: 40px;
       margin-bottom: 10px;
-      color: #b64238;
-    }
-
-    .delta-content {
-      background-color: rgba(0, 0, 0, 0.3);
-      margin-bottom: 40px;
-      padding: 20px;
-      border-radius: 15px;
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .delta-image {
-      max-width: 250px;
-      border-radius: 10px;
+      color: var(--highlight-red);
     }
 
     .info-box {
       max-width: 500px;
       min-width: 250px;
-      color: #b64238;
+      color: var(--text-red);
+      margin-bottom: 30px;
     }
 
     .info-box ul {
@@ -112,7 +105,7 @@
     }
 
     .info-box ul li {
-      background-color: #b22255;
+      background-color: var(--medium-red);
       margin: 5px 0;
       padding: 10px;
       border-radius: 8px;
@@ -121,7 +114,7 @@
 
     .download-btn {
       display: inline-block;
-      background-color: #ff4d88;
+      background-color: var(--highlight-red);
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
@@ -132,7 +125,7 @@
     }
 
     .download-btn:hover {
-      background-color: #cc3366;
+      background-color: var(--medium-red);
     }
 
     .social-links {
@@ -146,7 +139,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      background-color: #cc3366;
+      background-color: var(--medium-red);
       color: white;
       padding: 10px 15px;
       border-radius: 8px;
@@ -156,21 +149,32 @@
     }
 
     .social-btn:hover {
-      background-color: #ff1a75;
+      background-color: var(--highlight-red);
     }
 
     .copyright {
       text-align: center;
       margin: 20px 0;
       font-weight: bold;
-      color: #b64238;
+      color: var(--text-red);
     }
 
-    img.fortnite-image {
+    .delta-image, img.fortnite-image {
       display: block;
-      margin: 10px auto;
+      margin: 20px auto;
       max-width: 250px;
       border-radius: 10px;
+    }
+
+    .delta-content {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
@@ -222,7 +226,7 @@
     <div class="copyright">MAX في خدمتك دائما</div>
   </div>
 
-  <!-- صفحة ايفون -->
+  <!-- صفحة iPhone -->
   <div id="iphone" class="page">
     <h1>هاكات iPhone</h1>
 
@@ -260,7 +264,7 @@
     </div>
   </div>
 
-  <!-- صفحة اندرويد -->
+  <!-- صفحة Android -->
   <div id="android" class="page">
     <h1>هاكات Android</h1>
     <p>سيتم إضافة هاكات اندرويد قريبًا هنا.</p>
@@ -272,7 +276,7 @@
     <p>سيتم إضافة هاكات الكمبيوتر هنا أيضًا.</p>
   </div>
 
-  <!-- كود التنقل بين الصفحات -->
+  <!-- كود التنقل -->
   <script>
     function showPage(pageId) {
       const pages = document.querySelectorAll('.page');
