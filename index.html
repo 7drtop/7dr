@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>max</title>
-    <link rel="stylesheet" href="max-styles.css">
-</head>
-<style>
-  body {
-    background-color: darkred;
-  }
-</style>
-
-   <div class="nav-buttons">
-  <button onclick="showPage('home')">الصفحة الرئيسية</button>
-  <button onclick="showPage('iphone')">هاك روبلوكس ايفون</button>
-  <button onclick="showPage('android')">هاك روبلوكس اندرويد</button>
-  <button onclick="showPage('pc')">هاك روبلوكس بي سي</button>
-</div>
-<div id="home" class="page active">
-  <!-- محتوى الصفحة الرئيسية -->
-</div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>هاكات iOS</h3>
-                    <p></p> هاك دلتا وهاك كوديكس وهاك كرنل </p>
-                </div>
-                <div class="feature-item">
-                    <i class="fab fa-android"></i>
-                    <h3>هاكات Android</h3>
-                    <p>يوجد هاكات كثير واشهرها دلتا</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-laptop"></i>
-                    <h3>هاكات PC</h3>
-                    <p>يوجد هاكات كثره روبلوكس للكمبيوتر</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>اقواعد</h3>
-                    <p>السيرفر لايتحمل اي استخدام خطا او ضرر من الهاكات المعروضة</p>
-                </div>
-            </div>
-
-            <div class="social-links">
-                <a href="https://youtube.com/@rtxtop1-rtx" target="_blank" class="social-btn youtube-btn">
-                    <i class="fab fa-youtube"></i> يوتيوب
-                </a>
-                <a href="https://discord.gg/rtxtop1" target="_blank" class="social-btn discord-btn">
-                    <i class="fab fa-discord"></i> ديسكورد
-                </a>
-                </a>
-            </div>
-        </div>
-        <div class="copyright">MAX في خدمتك دائما</div>
-    </div>
-     
-<div id="iphone" class="page">
-  <!-- محتوى هاكات الايفون -->
-</div>
-  <meta charset="UTF-8">
-  <title>MAX </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAX</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
   <style>
     body {
-      background-color: #8B0000; /* أحمر غامق */
+      background-color: darkred;
       color: white;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       direction: rtl;
     }
-    .page-content {
-      padding: 30px 20px;
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background-color: #660000;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: #FFD700; /* ذهبي */
-    }
-
-    .fortnite-image {
-      display: block;
-      margin: 0 auto;
-      width: 250px;
-      border-radius: 10px;
-    }
-
-    .welcome-text {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 15px;
-    }
-
-    .highlight {
-      color: #FFD700;
+    .nav-buttons button {
+      background-color: #cc0000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      color: white;
       font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #ff0000;
+    }
+
+    .page {
+      display: none;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #ffd700; /* ذهبي */
+      margin-bottom: 10px;
+    }
+
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .feature-item {
+      background-color: #800000;
+      border-radius: 10px;
+      padding: 15px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .feature-item i {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #ff4444;
+    }
+
+    .feature-item p {
+      color: #f0f0f0;
     }
 
     .delta-content {
       background-color: rgba(0, 0, 0, 0.3);
-      margin: 40px 0;
+      margin-bottom: 40px;
       padding: 20px;
       border-radius: 15px;
       display: flex;
-      flex-wrap: wrap;
       gap: 20px;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .delta-image {
@@ -122,12 +105,9 @@
     }
 
     .info-box {
-      flex: 1;
+      max-width: 500px;
       min-width: 250px;
-    }
-
-    .info-box h2 {
-      color: #FFB6C1;
+      color: white;
     }
 
     .info-box ul {
@@ -136,7 +116,7 @@
     }
 
     .info-box ul li {
-      background-color: #B22222;
+      background-color: #b22222;
       margin: 5px 0;
       padding: 10px;
       border-radius: 8px;
@@ -144,7 +124,7 @@
 
     .download-btn {
       display: inline-block;
-      background-color: #FF0000;
+      background-color: #ff0000;
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
@@ -155,485 +135,142 @@
     }
 
     .download-btn:hover {
-      background-color: #CC0000;
+      background-color: #cc0000;
     }
 
-    .codex-btn {
-      background-color: #A52A2A !important;
-    }
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>MAX Hacks</title>
-  <style>
-    .page-content {
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-    .fortnite-image {
-      width: 200px;
-      height: auto;
-    }
-    .welcome-text span {
-      color: #ff0033;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-    <div class="welcome-text"><span>MAXtop</span>
-      <img src="https://www.bing.com/search?q=roblox+logo&FORM=HDRSC1" alt="Roblox logo" class="fortnite-image">
-      <p class="welcome-text"><span>MAX</span> هنا يوجد هاكات الآيفون</p>
-    </div>
-  </div>
-</body>
-</html>
-
-      <div class="delta-content">
-        <img src="https://images.sftcdn.net/images/t_app-icon-s/p/e2b8e161-10ad-4744-9ea1-2e7d059c28ad/2145656008/delta-executor-ggm-logo" alt="Delta Features" class="delta-image">
-        <div class="info-box">
-          <h2> هاك دلتا</h2>
-          <ul>
-            <li>حماية قوية</li>
-            <li>سهولة استخدام</li>
-            <li>ينصح به</li>
-          </ul>
-          <a href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist"
-             class="download-btn">
-            <i class="fas fa-download"></i> تنزيل دلتا
-          </a>
-        </div>
-      </div>
-
-      <div class="delta-content">
-        <img src="https://i.postimg.cc/vZgLmbJg/IMG-0210.webp" alt="Codex Features" class="delta-image">
-        <div class="info-box">
-          <h2> هاك كوديكس</h2>
-          <ul>
-            <li>حمايه جيده</li>
-            <li> سهولة استخدام</li>
-            <li>ليس الافضل</li>
-          </ul>
-          <a href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist"
-             class="download-btn codex-btn" onmousedown="return false" oncontextmenu="return false">
-            <i class="fas fa-download"></i> تنزيل كوديكس 
-          </a>
-        </div>
-      </div>
-
-      <div class="delta-content">
-        <img src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png" alt="Krnl Features" class="delta-image">
-        <div class="info-box">
-          <h2> هاك كرنل</h2>
-          <ul>
-            <li>حماية قوية</li>
-            <li>سهولة استخدام</li>
-            <li>ينصح به</li>
-          </ul>
-          <a href="itms-services://?action=download-manifest&url=https://krnl-ios.com/Install2.plist"
-             class="download-btn" onmousedown="return false" oncontextmenu="return false">
-            <i class="fas fa-download"></i> تنزيل كرنل
-          </a>
-    </div>
- <div id="android" class="page">
-  <!-- محتوى هاكات الاندرويد -->
-</div>
-  <meta charset="UTF-8">
-  <title>MAX </title>
-  <style>
-    body {
-      background-color: #8B0000; /* أحمر غامق */
-      color: white;
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-    .page-content {
-      padding: 30px 20px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: #FFD700; /* ذهبي */
-    }
-
-    .fortnite-image {
-      display: block;
-      margin: 0 auto;
-      width: 250px;
-      border-radius: 10px;
-    }
-
-    .welcome-text {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 15px;
-    }
-
-    .highlight {
-      color: #FFD700;
-      font-weight: bold;
-    }
-
-    .delta-content {
-      background-color: rgba(0, 0, 0, 0.3);
-      margin: 40px 0;
-      padding: 20px;
-      border-radius: 15px;
+    .social-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-btn {
+      display: flex;
       align-items: center;
-    }
-
-    .delta-image {
-      max-width: 250px;
-      border-radius: 10px;
-    }
-
-    .info-box {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .info-box h2 {
-      color: #FFB6C1;
-    }
-
-    .info-box ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .info-box ul li {
-      background-color: #B22222;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .download-btn {
-      display: inline-block;
-      background-color: #FF0000;
+      gap: 8px;
+      background-color: #cc0000;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 15px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 15px;
       transition: background 0.3s ease;
     }
 
-    .download-btn:hover {
-      background-color: #CC0000;
+    .social-btn:hover {
+      background-color: #ff0000;
     }
 
-    .codex-btn {
-      background-color: #A52A2A !important;
-    }
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>MAX Hacks</title>
-  <style>
-    .page-content {
+    .copyright {
       text-align: center;
-      font-family: Arial, sans-serif;
-    }
-    .fortnite-image {
-      width: 200px;
-      height: auto;
-    }
-    .welcome-text span {
-      color: #ff0033;
+      margin: 20px 0;
       font-weight: bold;
+      color: #ffcc00;
+    }
+
+    img.fortnite-image {
+      display: block;
+      margin: 10px auto;
+      max-width: 250px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-    <div class="welcome-text"><span>MAX</span>
-      <img src="https://www.bing.com/search?q=roblox+logo&FORM=HDRSC1" alt="Roblox logo" class="fortnite-image">
-      <p class="welcome-text"><span>MAX</span> هنا يوجد هاكات الاندرويد</p>
-    </div>
+  <div class="nav-buttons">
+    <button onclick="showPage('home')">الصفحة الرئيسية</button>
+    <button onclick="showPage('iphone')">هاك روبلوكس ايفون</button>
+    <button onclick="showPage('android')">هاك روبلوكس اندرويد</button>
+    <button onclick="showPage('pc')">هاك روبلوكس بي سي</button>
   </div>
-</body>
-</html>
-        <h1 class="fortnite-title">RTX</h1>
-        <img src="https://i.postimg.cc/7LbBfhTr/IMG-9631.png" alt="Roblox Android" class="fortnite-image">
-        <p class="fortnite-text">
-            قم بتنزيل هاك روبلوكس للأندرويد واستمتع بمميزات حصرية!
-        </p>
 
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/JhrQQYV2/E367-C7-D2-4750-4524-ADD5-B9-A8-DA953734.png" alt="Delta Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك دلتا</h2>
-                <ul>
-                    <li>من اقوى الهاكات حمايتاً</li>
-                    <li>سهولة الحصول على المفتاح</li>
-                    <li>يمكنك بحث السكربتات فيه</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/6xkkb0rfhgb82zh/Delta+v2.681.805.apk/file" class="download-btn android-btn" style="background: linear-gradient(135deg, #43A047, #2E7D32);" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Delta Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/vZgLmbJg/IMG-0210.webp" alt="Codex Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك كوديكس </h2>
-                <ul>
-                    <li>حمايه جيده</li>
-                    <li>خلفية الهاك جيده</li>
-                    <li>بحث سكربتات متطور</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/t38w40i3il7h4t8/Codex+v2.681.805.apk/file" class="download-btn android-btn" style="background: linear-gradient(135deg, #43A047, #2E7D32); width: auto; padding: 15px; white-space: nowrap;" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> CODEX Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png" alt="Krnl Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك كرنل</h2>
-                <ul>
-                    <li>من اقوى الهاكات من ناحية الحمايه</li>
-                    <li>سهولة المفتاح</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/kb4c3ek44xrfbov/Krnl+v2.681.805.apk/file" class="download-btn android-btn" style="background: linear-gradient(135deg, #43A047, #2E7D32);" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Krnl Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/T10Hb1Yr/IMG-0211.jpg" alt="Arceus X Neo Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك ارسيوس اكس نيو</h2>
-                <ul>
-                    <li>حمايه ممتازه</li>
-                    <li>سهولة الحصول على المفتاح</li>
-                    <li>من افضل الهاكات</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/b3mn7i3y9yi23q0/Roblox_Arceus_X_NEO_1.7.3.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Arceus X Neo Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/K8DrvwjM/IMG-0214.png" alt="Fluxus Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك فليكس</h2>
-                <ul>
-                    <li>حمايه ممتازه</li>
-                    <li>افضل هاك من ناحية السكربتات</li>
-                    <li>قائمه و خلفيه جميله</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/3yljs6ggohxnxfl/Fluxus+3.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Fluxus Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/90kgbSZM/30-DD9793-DD7-B-4-F30-8516-52-A9156-CDB2-E.png" alt="Cryptic Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك كرايبتك</h2>
-                <ul>
-                    <li>حمايه جيده</li>
-                    <li>قائمه و خلفيه مميزه</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/jvhybe5ygwxxdhr/Cryptic.2.681.CrypticExecutor.com.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Cryptic Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/pVBsdmST/44-CA8-C7-A-50-BD-4-B09-9-AF1-5-E232-BA37165.png" alt="Trigon Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك تريجون</h2>
-                <ul>
-                    <li>حمايه ممتازه</li>
-                    <li>سهولة الحصول على مفتاح</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/gzf3ji8b6iewf3f/Trigon_2.679.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Trigon Install
-                </a>
-            </div>
-        </div>
-
-        <div class="download-buttons">
-            <div class="delta-content">
-                <img src="https://i.postimg.cc/K8kr3JYQ/togif.gif" alt="Ronix Features" class="delta-image">
-                <div class="info-box">
-                    <h2>مميزات هاك رونيكس</h2>
-                    <ul>
-                        <li>خلفيه و قائمه اسطوريه</li>
-                        <li>يمكنك بحث السكربتات فيه</li>
-                        <li>سهولة استخدامه</li>
-                    </ul>
-                    <a href="https://www.mediafire.com/file/bfja4d5blp8odxy/Ronix_675.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                        <i class="fas fa-download"></i> Ronix Install
-                    </a>
-                </div>
-            </div>
-
-            <div class="delta-content">
-                <img src="https://i.postimg.cc/D00bkwJ5/IMG-0264.png" alt="Vega X Features" class="delta-image">
-                <div class="info-box">
-                    <h2>مميزات هاك فيجا اكس</h2>
-                    <ul>
-                        <li>سهولة الحصول على المفتاح</li>
-                        <li>سهولة الاستخدام</li>
-                        <li>حمايه جيده</li>
-                    </ul>
-                    <a href="https://www.mediafire.com/file/k75cn7b15ypvhvm/Vega.X+4.apk/file" class="download-btn android-btn" onmousedown="return false" oncontextmenu="return false">
-                        <i class="fas fa-download"></i> Vega X Install
-                    </a>
-                </div>
-            </div>
-        </div>
-          
-<div id="pc" class="page">
-  <!-- محتوى هاكات الكمبيوتر -->
-</div>
-        <h1 class="fortnite-title">RTX</h1>
-        <img src="https://i.postimg.cc/NMbx4DRr/D03-DBAF5-031-F-4-F8-D-A1-DA-620-A5-BEED6-A4.jpg" alt="Roblox PC" class="fortnite-image">
-        <p class="fortnite-text">
-            قم بتنزيل هاك روبلوكس للكمبيوتر واستمتع بمميزات حصرية!
-        </p>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/4xtBj52Z/4219495-A-FC75-4-E7-A-9546-B644-BCF4-EA85.png" alt="Semo Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك سيمو</h2>
-                <ul>
-                    <li>من افضل الهاكات حمايتاً</li>
-                    <li>لايوجد مفتاح</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/fada69ahq0ub0ba/Semo+Execuer+v3+Fix+(1).zip/file" class="download-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Semo Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/fbdpjd0q/64-E3-E5-E0-E3-E2-4-FC7-AA2-D-D3214-F830-C0-E.png" alt="Pro Hacker Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك برو هاكر</h2>
-                <ul>
-                    <li>الهاك من صنع عربي</li>
-                    <li>سهولة الاستخدام</li>
-                    <li>خلفيه اسطوريه</li>
-                </ul>
-                <a href="https://gofile.io/d/6npfj8" class="download-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Pro Hacker Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/j5ygNhNZ/AD101609-C2-A8-4-E25-A2-E0-FEDFA8-C740-CF.png" alt="Xeno Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك اكسينو</h2>
-                <ul>
-                    <li>حماية اسطوريه</li>
-                    <li>يمكنك بحث سكربتات فيه</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/t90zp47pnxi4ojk/Xeno+v1.2.45.zip/file" class="download-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Xeno Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/zXVrHVp6/123-D3440-9-F4-A-4-CF2-9-C73-C3-E96-C03-C2-BC.png" alt="Bloxstrap Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك بلوكس ستراب</h2>
-                <ul>
-                    <li>سهولة الاستخدام</li>
-                    <li>حمايه ممتازه</li>
-                    <li>خلفيه اسطوريه</li>
-                </ul>
-                <a href="https://www.mediafire.com/file/tv8jtzl4eg1dq0f/Bloxstrap-v2.9.0.exe/file" class="download-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Bloxstrap Install
-                </a>
-            </div>
-        </div>
-
-        <div class="delta-content">
-            <img src="https://i.postimg.cc/pL7jDhDS/44-CA8-C7-A-50-BD-4-B09-9-AF1-5-E232-BA37165.png" alt="Trigon Features" class="delta-image">
-            <div class="info-box">
-                <h2>مميزات هاك تريجون</h2>
-                <ul>
-                    <li>حمايه ممتازه</li>
-                    <li>سهولة الحصول على المفتاح</li>
-                    <li>سهولة الاستخدام</li>
-                </ul>
-                <a href="https://gofile.io/d/leLUN2" class="download-btn" onmousedown="return false" oncontextmenu="return false">
-                    <i class="fas fa-download"></i> Trigon Install
-                </a>
-            </div>
-        </div>
-
-        <div class="social-links fortnite-social">
-            <a href="https://youtube.com/@rtxtop1-rtx" target="_blank" class="social-btn youtube-btn">
-                <i class="fab fa-youtube"></i> يوتيوب
-            </a>
-            <a href="https://discord.gg/rtxtop1" target="_blank" class="social-btn discord-btn">
-                <i class="fab fa-discord"></i> ديسكورد
-            </a>
-            <a href="https://rtx261.github.io/RTX/RTX.mobileconfig" class="social-btn app-btn">
-                <i class="fas fa-mobile-alt"></i> تنزيل الموقع
-            </a>
-        </div>
-
-        <div class="fortnite-instructions">
-            <h2>طريقة تثبيت الهاك</h2>
-            <ol>
-                <li>قم بتحميل الملف المضغوط من الزر أعلاه</li>
-                <li>قم بفك ضغط الملف بعد التحميل</li>
-                <li>شغل ملف التثبيت وانتظر حتى يكتمل التثبيت</li>
-                <li>افتح البرنامج واستمتع بالمميزات!</li>
-            </ol>
-        </div>
-        <div class="copyright">جميع الحقوق محفوظة ©️ 2025 RTX</div>
+  <div id="home" class="page active">
+    <h1>مرحبًا بك في MAX</h1>
+    <div class="features-grid">
+      <div class="feature-item">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>هاكات iOS</h3>
+        <p>هاك دلتا وهاك كوديكس وهاك كرنل</p>
+      </div>
+      <div class="feature-item">
+        <i class="fab fa-android"></i>
+        <h3>هاكات Android</h3>
+        <p>يوجد هاكات كثير وأشهرها دلتا</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-laptop"></i>
+        <h3>هاكات PC</h3>
+        <p>يوجد هاكات كثيرة روبلوكس للكمبيوتر</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-shield-alt"></i>
+        <h3>القواعد</h3>
+        <p>السيرفر لا يتحمل أي استخدام خاطئ أو ضرر من الهاكات المعروضة</p>
+      </div>
     </div>
-<script>
-  function showPage(id) {
-    const pages = document.querySelectorAll('.page-section');
-    pages.forEach(page => {
-      page.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
-  }
 
-  // تفعيل الصفحة الرئيسية أول ما تفتح
-  window.onload = () => {
-    showPage('home');
-  };
-</script>
-<script src="index.js"></script>
-</body>
-</html>
-</body>
-</html>
+    <div class="social-links">
+      <a href="https://youtube.com/@rtxtop1-rtx" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> يوتيوب
+      </a>
+      <a href="https://discord.gg/rtxtop1" target="_blank" class="social-btn discord-btn">
+        <i class="fab fa-discord"></i> ديسكورد
+      </a>
+    </div>
+
+    <div class="copyright">MAX في خدمتك دائما</div>
+  </div>
+
+  <div id="iphone" class="page">
+    <h1>هاكات ا iPhone</h1>
+    <img
+      src="https://images.sftcdn.net/images/t_app-icon-s/p/e2b8e161-10ad-4744-9ea1-2e7d059c28ad/2145656008/delta-executor-ggm-logo"
+      alt="Delta"
+      class="delta-image"
+    />
+    <div class="info-box">
+      <h2>هاك دلتا</h2>
+      <ul>
+        <li>حماية قوية</li>
+        <li>سهولة استخدام</li>
+        <li>ينصح به</li>
+      </ul>
+      <a
+        href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist"
+        class="download-btn"
+        >تنزيل دلتا</a
+      >
+    </div>
+
+    <img
+      src="https://i.postimg.cc/vZgLmbJg/IMG-0210.webp"
+      alt="Codex"
+      class="delta-image"
+    />
+    <div class="info-box">
+      <h2>هاك كوديكس</h2>
+      <ul>
+        <li>حماية جيدة</li>
+        <li>سهولة استخدام</li>
+        <li>ليس الأفضل</li>
+      </ul>
+      <a
+        href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist"
+        class="download-btn codex-btn"
+        onmousedown="return false"
+        oncontextmenu="return false"
+        >تنزيل كوديكس</a
+      >
+    </div>
+
+    <img
+      src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png"
+      alt="Krnl"
+      class="delta-image"
+    />
+    <div class="info-box">
+      <h2>هاك كرنل</h2>
+      <ul>
+        <li>حماية قوية</li>
+        <li>سهولة استخدام</
