@@ -7,11 +7,11 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <style>
     :root {
-      --main-red: #5a0c0c;
-      --medium-red: #a62d2d;
-      --highlight-red: #d1403f;
-      --text-red: #d1403f;
-      --soft-red: #7a1f1f;
+      --main-red: #4a0d0d;
+      --menu-red: #a94442;
+      --highlight-red: #e05c5c;
+      --text-red: #e05c5c;
+      --box-red: #7a1f1f;
     }
 
     body {
@@ -28,15 +28,15 @@
       justify-content: center;
       gap: 12px;
       padding: 20px;
-      background-color: var(--soft-red);
+      background-color: var(--menu-red);
     }
 
     .nav-buttons button {
-      background-color: var(--medium-red);
+      background-color: var(--highlight-red);
       border: none;
       padding: 12px 24px;
       border-radius: 10px;
-      color: var(--text-red);
+      color: white;
       font-weight: bold;
       cursor: pointer;
       font-size: 15px;
@@ -44,8 +44,7 @@
     }
 
     .nav-buttons button:hover {
-      background-color: var(--highlight-red);
-      color: white;
+      background-color: #ff6b6b;
     }
 
     .page {
@@ -53,7 +52,7 @@
       max-width: 1000px;
       margin: 20px auto;
       padding: 25px;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.05);
       border-radius: 15px;
     }
 
@@ -78,12 +77,12 @@
     }
 
     .feature-item {
-      background-color: var(--soft-red);
+      background-color: var(--box-red);
       border-radius: 10px;
       padding: 15px;
       width: 220px;
       text-align: center;
-      color: var(--text-red);
+      color: white;
     }
 
     .feature-item i {
@@ -95,7 +94,7 @@
     .info-box {
       max-width: 500px;
       min-width: 250px;
-      color: var(--text-red);
+      color: white;
       margin-bottom: 30px;
     }
 
@@ -105,7 +104,7 @@
     }
 
     .info-box ul li {
-      background-color: var(--medium-red);
+      background-color: var(--menu-red);
       margin: 5px 0;
       padding: 10px;
       border-radius: 8px;
@@ -125,7 +124,7 @@
     }
 
     .download-btn:hover {
-      background-color: var(--medium-red);
+      background-color: #ff6b6b;
     }
 
     .social-links {
@@ -139,7 +138,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      background-color: var(--medium-red);
+      background-color: var(--menu-red);
       color: white;
       padding: 10px 15px;
       border-radius: 8px;
@@ -149,14 +148,14 @@
     }
 
     .social-btn:hover {
-      background-color: var(--highlight-red);
+      background-color: #ff6b6b;
     }
 
     .copyright {
       text-align: center;
       margin: 20px 0;
       font-weight: bold;
-      color: var(--text-red);
+      color: var(--highlight-red);
     }
 
     .delta-image, img.fortnite-image {
@@ -167,7 +166,7 @@
     }
 
     .delta-content {
-      background-color: rgba(0, 0, 0, 0.25);
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 20px;
       border-radius: 15px;
       display: flex;
@@ -180,7 +179,6 @@
 </head>
 <body>
 
-  <!-- قائمة التنقل -->
   <div class="nav-buttons">
     <button onclick="showPage('home')">الصفحة الرئيسية</button>
     <button onclick="showPage('iphone')">هاك روبلوكس ايفون</button>
@@ -188,7 +186,6 @@
     <button onclick="showPage('pc')">هاك روبلوكس بي سي</button>
   </div>
 
-  <!-- الصفحة الرئيسية -->
   <div id="home" class="page active">
     <h1>مرحبًا بك في MAX</h1>
     <div class="features-grid">
@@ -226,7 +223,6 @@
     <div class="copyright">MAX في خدمتك دائما</div>
   </div>
 
-  <!-- صفحة iPhone -->
   <div id="iphone" class="page">
     <h1>هاكات iPhone</h1>
 
@@ -264,19 +260,16 @@
     </div>
   </div>
 
-  <!-- صفحة Android -->
   <div id="android" class="page">
     <h1>هاكات Android</h1>
     <p>سيتم إضافة هاكات اندرويد قريبًا هنا.</p>
   </div>
 
-  <!-- صفحة PC -->
   <div id="pc" class="page">
     <h1>هاكات PC</h1>
     <p>سيتم إضافة هاكات الكمبيوتر هنا أيضًا.</p>
   </div>
 
-  <!-- كود التنقل -->
   <script>
     function showPage(pageId) {
       const pages = document.querySelectorAll('.page');
@@ -287,6 +280,5 @@
       }
     }
   </script>
-
 </body>
 </html>
