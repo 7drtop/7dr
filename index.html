@@ -613,6 +613,19 @@
         </div>
         <div class="copyright">جميع الحقوق محفوظة © 2025 RTX</div>
     </div>
+<script>
+  function showPage(id) {
+    const pages = document.querySelectorAll('.page-section');
+    pages.forEach(page => {
+      page.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
 
+  // تفعيل الصفحة الرئيسية أول ما تفتح
+  window.onload = () => {
+    showPage('home');
+  };
+</script>
 </body>
 </html>
