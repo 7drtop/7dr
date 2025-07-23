@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MAX</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <style>
     body {
-      background-color: darkred;
-      color: white;
+      background-color: #5a0000;
+      color: #ffe6ea;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -23,22 +20,22 @@
       justify-content: center;
       gap: 10px;
       padding: 20px;
-      background-color: #660000;
+      background-color: #770000;
     }
 
     .nav-buttons button {
-      background-color: #cc0000;
+      background-color: #cc3366;
       border: none;
-      padding: 10px 15px;
-      border-radius: 6px;
-      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #fff0f5;
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s;
     }
 
     .nav-buttons button:hover {
-      background-color: #ff0000;
+      background-color: #e6005c;
     }
 
     .page {
@@ -46,7 +43,7 @@
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
       border-radius: 15px;
     }
 
@@ -54,11 +51,8 @@
       display: block;
     }
 
-    h1,
-    h2,
-    h3 {
-      color: #ffd700; /* ذهبي */
-      margin-bottom: 10px;
+    h1, h2, h3 {
+      color: #ffb6c1;
     }
 
     .features-grid {
@@ -70,21 +64,18 @@
     }
 
     .feature-item {
-      background-color: #800000;
+      background-color: #801336;
       border-radius: 10px;
       padding: 15px;
       width: 220px;
       text-align: center;
+      color: #ffe6f0;
     }
 
     .feature-item i {
       font-size: 40px;
       margin-bottom: 10px;
-      color: #ff4444;
-    }
-
-    .feature-item p {
-      color: #f0f0f0;
+      color: #ff4f7b;
     }
 
     .delta-content {
@@ -116,7 +107,7 @@
     }
 
     .info-box ul li {
-      background-color: #b22222;
+      background-color: #b22255;
       margin: 5px 0;
       padding: 10px;
       border-radius: 8px;
@@ -124,7 +115,7 @@
 
     .download-btn {
       display: inline-block;
-      background-color: #ff0000;
+      background-color: #ff4d88;
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
@@ -135,7 +126,7 @@
     }
 
     .download-btn:hover {
-      background-color: #cc0000;
+      background-color: #cc3366;
     }
 
     .social-links {
@@ -149,7 +140,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      background-color: #cc0000;
+      background-color: #cc3366;
       color: white;
       padding: 10px 15px;
       border-radius: 8px;
@@ -159,14 +150,14 @@
     }
 
     .social-btn:hover {
-      background-color: #ff0000;
+      background-color: #ff1a75;
     }
 
     .copyright {
       text-align: center;
       margin: 20px 0;
       font-weight: bold;
-      color: #ffcc00;
+      color: #ffb6c1;
     }
 
     img.fortnite-image {
@@ -178,6 +169,8 @@
   </style>
 </head>
 <body>
+
+  <!-- قائمة التنقل -->
   <div class="nav-buttons">
     <button onclick="showPage('home')">الصفحة الرئيسية</button>
     <button onclick="showPage('iphone')">هاك روبلوكس ايفون</button>
@@ -185,6 +178,7 @@
     <button onclick="showPage('pc')">هاك روبلوكس بي سي</button>
   </div>
 
+  <!-- الصفحة الرئيسية -->
   <div id="home" class="page active">
     <h1>مرحبًا بك في MAX</h1>
     <div class="features-grid">
@@ -211,10 +205,10 @@
     </div>
 
     <div class="social-links">
-      <a href="https://youtube.com/@rtxtop1-rtx" target="_blank" class="social-btn youtube-btn">
+      <a href="https://youtube.com/@rtxtop1-rtx" target="_blank" class="social-btn">
         <i class="fab fa-youtube"></i> يوتيوب
       </a>
-      <a href="https://discord.gg/rtxtop1" target="_blank" class="social-btn discord-btn">
+      <a href="https://discord.gg/rtxtop1" target="_blank" class="social-btn">
         <i class="fab fa-discord"></i> ديسكورد
       </a>
     </div>
@@ -222,13 +216,11 @@
     <div class="copyright">MAX في خدمتك دائما</div>
   </div>
 
+  <!-- صفحة ايفون -->
   <div id="iphone" class="page">
     <h1>هاكات iPhone</h1>
-    <img
-      src="https://images.sftcdn.net/images/t_app-icon-s/p/e2b8e161-10ad-4744-9ea1-2e7d059c28ad/2145656008/delta-executor-ggm-logo"
-      alt="Delta"
-      class="delta-image"
-    />
+
+    <img src="https://images.sftcdn.net/images/t_app-icon-s/p/e2b8e161-10ad-4744-9ea1-2e7d059c28ad/2145656008/delta-executor-ggm-logo" alt="Delta" class="delta-image" />
     <div class="info-box">
       <h2>هاك دلتا</h2>
       <ul>
@@ -236,18 +228,10 @@
         <li>سهولة استخدام</li>
         <li>ينصح به</li>
       </ul>
-      <a
-        href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist"
-        class="download-btn"
-        >تنزيل دلتا</a
-      >
+      <a href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall21.plist" class="download-btn">تنزيل دلتا</a>
     </div>
 
-    <img
-      src="https://i.postimg.cc/vZgLmbJg/IMG-0210.webp"
-      alt="Codex"
-      class="delta-image"
-    />
+    <img src="https://i.postimg.cc/vZgLmbJg/IMG-0210.webp" alt="Codex" class="delta-image" />
     <div class="info-box">
       <h2>هاك كوديكس</h2>
       <ul>
@@ -255,22 +239,45 @@
         <li>سهولة استخدام</li>
         <li>ليس الأفضل</li>
       </ul>
-      <a
-        href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist"
-        class="download-btn codex-btn"
-        onmousedown="return false"
-        oncontextmenu="return false"
-        >تنزيل كوديكس</a
-      >
+      <a href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist" class="download-btn">تنزيل كوديكس</a>
     </div>
 
-    <img
-      src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png"
-      alt="Krnl"
-      class="delta-image"
-    />
+    <img src="https://i.postimg.cc/Qtd17DBr/7-D0-FD78-F-186-C-4-C0-A-A335-74-BD7-EF9-BDBB.png" alt="Krnl" class="delta-image" />
     <div class="info-box">
       <h2>هاك كرنل</h2>
       <ul>
         <li>حماية قوية</li>
-        <li>سهولة استخدام</
+        <li>سهولة استخدام</li>
+        <li>ينصح به أيضًا</li>
+      </ul>
+      <a href="#" class="download-btn">تنزيل كرنل</a>
+    </div>
+  </div>
+
+  <!-- صفحة اندرويد -->
+  <div id="android" class="page">
+    <h1>هاكات Android</h1>
+    <p>سيتم إضافة هاكات اندرويد قريبًا هنا.</p>
+  </div>
+
+  <!-- صفحة PC -->
+  <div id="pc" class="page">
+    <h1>هاكات PC</h1>
+    <p>سيتم إضافة هاكات الكمبيوتر هنا أيضًا.</p>
+  </div>
+
+  <!-- كود التنقل بين الصفحات -->
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach((page) => page.classList.remove('active'));
+
+      const activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
