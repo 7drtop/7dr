@@ -1,129 +1,182 @@
-:root {
-  --bg-dark: #2B0000;           /* خلفية الموقع */
-  --overlay: rgba(255, 0, 0, 0.05); /* خلفيات العناصر */
-  --primary: #8B0000;           /* الأحمر الغامق */
-  --accent: #FF4D4D;            /* لون التمييز */
-  --text-light: #FFFFFF;        /* النصوص */
-  --replace-rtx: "MAX";         /* استبدال RTX */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Cairo', 'Tajawal', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  line-height: 1.6;
+  background: linear-gradient(to bottom, #3b0000, #1a0000);
+  color: white;
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
 }
 
-/* الحاويات العامة */
-.container,
-.feature-item,
-.info-box,
-.script-card,
-.key-card {
-  background-color: var(--overlay);
-  border: 1px solid var(--accent);
-  border-radius: 10px;
+nav {
+  background-color: #4d0000;
   padding: 15px;
-  margin-bottom: 20px;
+  box-shadow: 0 2px 10px #00000060;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  background: #990000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background: #cc0000;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.feature-item {
+  background: #5a0000;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 0 10px #00000050;
   transition: transform 0.3s ease;
 }
-.container:hover,
-.feature-item:hover,
-.info-box:hover,
-.script-card:hover,
-.key-card:hover {
-  transform: scale(1.01);
+
+.feature-item:hover {
+  transform: translateY(-5px);
 }
 
-/* العناوين */
-h1, h2, h3, .fortnite-title {
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--accent);
-  margin-bottom: 15px;
+.feature-item i {
+  background: #cc0000;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-/* الأزرار */
-.download-btn,
-.social-btn,
-.copy-btn,
-.search-btn,
-.fortnite-btn,
-.esaign-btn,
-.dns-btn,
-.certificate-btn,
-.android-btn {
-  background-color: var(--primary);
-  color: var(--text-light);
-  border: 2px solid var(--text-light);
-  border-radius: 8px;
-  padding: 10px 20px;
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  background: #330000;
+}
+
+.social-btn {
+  background: #ff0033;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.social-btn:hover {
+  background: #cc0022;
+}
+
+.page-content {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
   text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block;
-  margin: 5px;
-  text-decoration: none;
-}
-.download-btn:hover,
-.social-btn:hover,
-.copy-btn:hover,
-.search-btn:hover,
-.fortnite-btn:hover,
-.esaign-btn:hover,
-.dns-btn:hover,
-.certificate-btn:hover,
-.android-btn:hover {
-  background-color: var(--accent);
-  transform: translateY(-3px);
+  font-size: 50px;
+  color: #FFD700;
+  margin-bottom: 20px;
 }
 
-/* نصوص داخلية */
-p, span, li {
-  color: var(--text-light);
-  font-size: 1rem;
+.welcome-text {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 0;
 }
 
-/* نصوص RTX -> MAX */
-.rtx-text::after {
-  content: var(--replace-rtx);
-  visibility: visible;
-}
-.rtx-text {
-  display: inline-block;
-  color: var(--accent);
-  font-family: monospace;
+.highlight {
+  color: #FFD700;
+  font-weight: bold;
 }
 
-/* روابط */
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+.delta-content {
+  background: rgba(0,0,0,0.4);
+  padding: 25px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 0 10px #00000040;
 }
 
-/* إدخالات، حقول */
-input, textarea, select {
-  background-color: #1a0000;
-  color: var(--text-light);
-  border: 1px solid var(--accent);
+.delta-image {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.info-box h2 {
+  color: #FFB6C1;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  background: #800000;
+  margin: 8px 0;
   padding: 10px;
-  border-radius: 5px;
-}
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 5px var(--accent);
+  border-radius: 10px;
 }
 
-/* قوائم */
-ul {
-  list-style: disc inside;
+.download-btn {
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: white;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: linear-gradient(to right, #e60000, #b30000);
+}
+
+.codex-btn {
+  background: linear-gradient(to right, #993333, #660000) !important;
+}
+
+.copyright {
+  background-color: #220000;
+  text-align: center;
+  padding: 15px;
+  color: #aaa;
+  font-size: 14px;
 }
