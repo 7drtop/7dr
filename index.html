@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -12,16 +13,15 @@
   }
 </style>
 
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()"></div>
-        <ul id="menu">
-            <li onclick="showPage('home')">الصفحة الرئيسية</li>
-            <li onclick="showPage('roblox')">هاك روبلوكس ايفون</li>
-            <li onclick="showPage('roblox-android')">هاك روبلوكس اندرويد</li>
-            <li onclick="showPage('roblox-pc')">هاك روبلوكس بي سي</li>
-        </ul>
-    </nav>
-
+   <div class="nav-buttons">
+  <button onclick="showPage('home')">الصفحة الرئيسية</button>
+  <button onclick="showPage('iphone')">هاك روبلوكس ايفون</button>
+  <button onclick="showPage('android')">هاك روبلوكس اندرويد</button>
+  <button onclick="showPage('pc')">هاك روبلوكس بي سي</button>
+</div>
+<div id="home" class="page active">
+  <!-- محتوى الصفحة الرئيسية -->
+</div>
             <div class="features-grid">
                 <div class="feature-item">
                     <i class="fas fa-mobile-alt"></i>
@@ -58,7 +58,9 @@
         <div class="copyright">MAX في خدمتك دائما</div>
     </div>
      
-<div id="roblox" class="page-content">
+<div id="iphone" class="page">
+  <!-- محتوى هاكات الايفون -->
+</div>
   <meta charset="UTF-8">
   <title>MAX </title>
   <style>
@@ -235,7 +237,9 @@
             <i class="fas fa-download"></i> تنزيل كرنل
           </a>
     </div>
-  <div id="roblox-android" class="fortnite-page page-content">
+ <div id="android" class="page">
+  <!-- محتوى هاكات الاندرويد -->
+</div>
   <meta charset="UTF-8">
   <title>MAX </title>
   <style>
@@ -508,7 +512,9 @@
             </div>
         </div>
           
-<div id="roblox-pc" class="fortnite-page page-content">
+<div id="pc" class="page">
+  <!-- محتوى هاكات الكمبيوتر -->
+</div>
         <h1 class="fortnite-title">RTX</h1>
         <img src="https://i.postimg.cc/NMbx4DRr/D03-DBAF5-031-F-4-F8-D-A1-DA-620-A5-BEED6-A4.jpg" alt="Roblox PC" class="fortnite-image">
         <p class="fortnite-text">
